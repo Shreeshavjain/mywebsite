@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <title>Shreesha V Jain - Profile</title>
 
-  <!-- ✅ Google Font (Orbitron) -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 
-  <!-- ✅ Font Awesome for Instagram icon -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    /* 🌈 Creative Animated Background */
     body {
       margin: 0;
       padding: 0;
@@ -31,16 +30,17 @@
     .container {
       max-width: 800px;
       margin: 40px auto;
-      background: rgba(0, 0, 0, 0.7); /* Glass effect */
+      background: rgba(0, 0, 0, 0.7);
       padding: 30px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       border-radius: 12px;
     }
 
-    h1, h2 {
+    h1 {
       text-align: center;
       margin: 10px 0;
       animation: slideIn 1.2s ease-out;
+      font-size: 2.2rem;
     }
 
     @keyframes slideIn {
@@ -54,7 +54,6 @@
       }
     }
 
-    /* 🖼️ Photo Fade-in Effect */
     .profile-photo {
       width: 130px;
       height: 160px;
@@ -117,19 +116,43 @@
       transform: scale(1.05);
       box-shadow: 0 0 10px #dc2743;
     }
+
+    /* 📱 Responsive for small screens */
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px 10px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .details {
+        font-size: 16px;
+      }
+
+      .insta-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+      }
+
+      .insta-btn i {
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Shreesha V Jain</h1>
-    <h2>Father's Name: Vinay Ariga</h2>
 
     <img src="myphoto.jpg" alt="My Photo" class="profile-photo">
 
     <div class="details">
       <p><strong>Class 1 to 10:</strong> Sri Ramakrishna Vidyanikethana, Gopala, Shivamogga</p>
       <p><strong>Class 11 & 12:</strong> PACE PU College, Shivamogga</p>
-      <p><strong>Engineering:</strong> NMAM Institute of Technology, Nitte</p>
+      <p><strong>Engineering:</strong> NITTE NMAM Institute of Technology, Nitte</p>
     </div>
 
     <div class="contact">
